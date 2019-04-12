@@ -63,7 +63,10 @@
     <Compile Include="Assets\Scripts\Bird.cs" />
     <Compile Include="Assets\Scripts\GameControl.cs" />
     <Compile Include="Assets\Scripts\RepeatingBackground.cs" />
+    <Compile Include="Assets\Scripts\RepeatingWall.cs" />
     <Compile Include="Assets\Scripts\Restart.cs" />
+    <Compile Include="Assets\Scripts\Scrolling.cs" />
+    <Compile Include="Assets\Scripts\ScrollingWall.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/jobprojects/flappy_bird/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

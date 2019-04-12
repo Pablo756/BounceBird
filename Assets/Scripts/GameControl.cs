@@ -7,13 +7,15 @@ public class GameControl : MonoBehaviour
 	public static GameControl instance;			
 	public Text scoreText;						
 	public GameObject GameOverUI;
+    public GameObject Score;
+    public bool game_over = false;
+    public bool isCollision = false;
+    public float upForce;
+    public float scrollSpeed = -2f;
 
-    private int score = 0;						
-				
-	public float scrollSpeed = -2f;
+    private int score = 0;
 
-
-	void Awake()
+    void Awake()
 	{
 		
 		if (instance == null)
@@ -34,5 +36,7 @@ public class GameControl : MonoBehaviour
     public void GameOver()
     {
         GameOverUI.SetActive(true);
-    }
+        Score.SetActive(false);
+        game_over = true;
+    }  
 }
